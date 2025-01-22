@@ -19,3 +19,8 @@ jobs:
         run: |
           echo $SHELL
           ls -a
+      - name: Dependancies installation
+        run: |
+          sudo apt update
+          sudo apt upgrade -y
+          pip install -r requirements.txt
