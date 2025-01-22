@@ -14,3 +14,8 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: 3.13
+
+      - name: Listing the files w/ an example
+        run: |
+          echo $SHELL
+          ls -a
