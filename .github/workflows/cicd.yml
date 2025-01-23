@@ -49,5 +49,5 @@ jobs:
       
       - name: Building and pushing image
           run: |
-          docker -t build gitimg2:gitv2 .
-          docker push ph4nisk:gitv2
+          docker -t build ${{secrets.DOCKER_USR}}/gitimg2:gitv2 .
+          docker push ${{secrets.DOCKER_USR}}/ph4nisk:gitv2
