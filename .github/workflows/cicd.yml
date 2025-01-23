@@ -50,4 +50,4 @@ jobs:
       - name: Building and pushing image
         run: |
           docker build -t ${{secrets.DOCKER_USR}}/fnl:${{github.sha}} .
-          docker push ${{secrets.DOCKER_USR}}/fnl:{{github.sha}}
+          docker push ${{secrets.DOCKER_USR}}/fnl:${{github.sha}}
