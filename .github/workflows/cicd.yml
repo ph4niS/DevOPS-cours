@@ -46,8 +46,8 @@ jobs:
         with:
           username: ${{secrets.DOCKER_USR}}
           password: ${{secrets.DOCKER_PWD}}
-      
+
       - name: Building and pushing image
-          run: |
-            docker -t build ${{secrets.DOCKER_USR}}/gitimg2:gitv2 .
-            docker push ${{secrets.DOCKER_USR}}/ph4nisk:gitv2
+        run: |
+          docker -t build ${{secrets.DOCKER_USR}}/gitimg2:gitv2 .
+          docker push ${{secrets.DOCKER_USR}}/ph4nisk:gitv2
