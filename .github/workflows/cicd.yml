@@ -55,6 +55,6 @@ jobs:
       - name: Deploying container app
         uses: azure/webapps-deploy@v2
         with:
-          app-name: "phdevopsapp"
+          app-name: "phani-devops-classwork"
           publish-profile: ${{secrets.AZURE_WEBAPP_PUBLISH_PROFILE}}
           images: ${{secrets.DOCKER_USR}}/fnl:${{github.sha}}
